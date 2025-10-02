@@ -75,3 +75,8 @@ body {
 .block:last-child::after {
   display: none;
 }
+footer{
+  color:red;
+  position: absolute;
+  font-size: 30px;
+}
