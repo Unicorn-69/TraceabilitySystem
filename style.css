@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  height: 100vh;
+  background: #f4f6f9;
+}
+
+/* Main content */
+.content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* Sidebar (right) */
+.sidebar {
+  width: 220px;
+  background: #1e1e2f;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #bbb;
+  padding: 10px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  background: #33334d;
+  color: #fff;
+}
+
+/* Blockchain visualization */
+.blockchain {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.block {
+  background: #fff;
+  padding: 20px;
+  border: 2px solid #4cafef;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  min-width: 120px;
+  position: relative;
+}
+
+.block::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -40px;
+  width: 40px;
+  height: 2px;
+  background: #4cafef;
+}
+
+.block:last-child::after {
+  display: none;
+}
